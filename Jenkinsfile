@@ -3,7 +3,7 @@ node {
               echo "1.Clone Stage" 
               git url: "https://github.com/Tigerbeer123/terraform-hw-github-actions.git" 
               script { 
-                     build_tag = 'test' //sh(returnStdout: true, script: 'git rev-parse --short HEAD').trim() 
+                     build_tag = sh(returnStdout: true, script: 'git rev-parse --short HEAD').trim() 
               } 
        }
        
