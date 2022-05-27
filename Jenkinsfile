@@ -1,9 +1,4 @@
 node {
-           environment {
-    TF_WORKSPACE = 'default' //Sets the Terraform Workspace
-    TF_IN_AUTOMATION = 'true'
-    }
-
        stage('Clone') { 
               echo "1.Clone Stage" 
               git url: "https://github.com/Tigerbeer123/terraform-hw-github-actions.git" 
