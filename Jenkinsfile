@@ -16,7 +16,5 @@ node {
       stage ('Terraform Apply') {
           sh "terraform apply -auto-approve "
       }
-      stage ('Terraform Destroy') {
-          sh "terraform destroy -auto-approve "
-      }
+
 }
